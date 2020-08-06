@@ -50,21 +50,28 @@ div {
   font-weight: bold;
   position: absolute;
   left: 64px;
+  margin: 0;
 }
 
 .header_place_subtitle {
   width: 388px;
   line-height: 25px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
+  margin: 0;
   position: absolute;
   left: 64px;
   bottom: 30px;
+  z-index: 1;
 }
 
-.heade__subtitle-link {
+.header__subtitle-link {
   text-decoration: none;
   color: #2f80ed;
+}
+
+.header__subtitle-link::after {
+  content: " →";
 }
 
 .header__main-illustration {
@@ -79,10 +86,11 @@ div {
 .header__square-pic {
   height: 568px;
   width: 568px;
-  position: absolute;
-  top: 64;
-  left: 0;
   background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: -1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
