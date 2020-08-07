@@ -24,7 +24,7 @@ div {
   /* выше установили ограничения для секции */
   display: flex;
   align-items: center;
-
+  position: relative;
 }
 
 .logo {
@@ -56,7 +56,7 @@ div {
 .header_place_subtitle {
   width: 388px;
   line-height: 25px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: normal;
   margin: 0;
   position: absolute;
