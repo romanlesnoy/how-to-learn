@@ -22,10 +22,11 @@ div {
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   position: relative;
-  background-color: #f2f2f2;
+
 }
 
 .logo {
@@ -72,9 +73,6 @@ div {
   color: #2f80ed;
 }
 
-.header__subtitle-link::after {
-  content: " →";
-}
 
 .header__main-illustration {
   width: 765px;
@@ -141,22 +139,28 @@ div {
 
 .digits {
   padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
 .digits__title {
+  width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   text-align: center;
-  margin: 0 0 20px;
+  margin: auto;
 }
+
 .digits__subtitle {
+  width: 60%;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  margin: 0;
+  margin: 20px auto auto;
 }
 
 .table {
@@ -184,6 +188,46 @@ div {
   font-weight: normal;
   margin: 20px 0 0;
 }
+
+.feinman {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background: #f2f2f2 no-repeat bottom left url(../images/feynman.png);
+  padding-top: 100px;
+  position: relative;
+}
+
+.feiman__title{
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+}
+s
+.feiman__subtitle {
+  padding-top: 70px;
+  line-height: 1.15;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  margin: auto;
+
+}
+
+.feiman__link{
+  text-decoration: none;
+  color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+}
+
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
