@@ -272,7 +272,6 @@
 
 .footer {
   background-color: #1f1f1f;
-  position: relative;
   padding: 60px 0 40px 0;
   display: flex;
   box-sizing: border-box;
@@ -293,14 +292,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  position: relative;
 }
 
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
   width: 183px;
   height: 35px;
-  position: relative;
 }
 
 .footer__author {
@@ -308,7 +305,6 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  position: relative;
   margin: 18px 0 18px;
 }
 
