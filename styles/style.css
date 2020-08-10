@@ -103,6 +103,7 @@
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
+  font-weight: normal;
   margin: 0;
 }
 
@@ -114,12 +115,11 @@
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 0 30px 0;
 }
 
-.two-columns__paragraph:nth-of-type(2) {
-  margin: 30px 0;
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -136,7 +136,7 @@
 }
 
 
-.digits__title {
+.section__title {
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -145,7 +145,7 @@
   margin: auto;
 }
 
-.digits__subtitle {
+.section__subtitle {
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -180,27 +180,26 @@
   margin: 20px 0 0;
 }
 
-.feinman {
-  height: 100vh;
-  min-height: 600px;
+.feynman {
+  height: 790px;
   background: url(../images/feynman.png);
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-position: left bottom;
   position: relative;
+  padding-top: 100px;
 }
 
-.feiman__title {
+.feynman__title {
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
   text-align: center;
   margin: auto;
-  padding-top: 100px;
 }
 
-.feiman__subtitle {
+.feynman__subtitle {
   padding-top: 70px;
   line-height: 1.15;
   font-size: 36px;
@@ -209,9 +208,9 @@
   margin: auto;
 }
 
-.feiman__link{
+.feynman__link{
   text-decoration: none;
-  color: #2f80ed;
+  color: black;
   line-height: 51px;
   font-size: 36px;
   position: absolute;
@@ -229,24 +228,15 @@
   overflow: hidden;
 }
 
-.kaufman__title_theme_dark {
-  width: 60%;
+.section__title_theme_dark {
   line-height: 69px;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  margin: auto;
   color: white;
+  z-index: 1;
 }
 
-.kaufman__subtitle_theme_dark {
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  margin: 20px auto auto;
+.section__subtitle_theme_dark {
   color: white;
+  z-index: 1;
 }
 
 .table_theme_dark {
@@ -283,12 +273,15 @@
 .footer {
   background-color: #1f1f1f;
   position: relative;
-  padding: 90px 0 60px;
+  padding: 60px 0 40px 0;
+  display: flex;
+  box-sizing: border-box;
+  min-height: 350px;
 }
 
 .footer__columns {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -296,6 +289,10 @@
 
 .footer__column_content_copyright {
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   position: relative;
 }
 
@@ -303,6 +300,7 @@
   background-image: url(../images/logo_place_footer.svg);
   width: 183px;
   height: 35px;
+  position: relative;
 }
 
 .footer__author {
@@ -310,9 +308,8 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  position: absolute;
-  left: 0;
-  bottom: 18px;
+  position: relative;
+  margin: 18px 0 18px;
 }
 
 .footer__column-heading {
