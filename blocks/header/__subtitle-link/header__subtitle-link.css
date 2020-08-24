@@ -3,7 +3,7 @@
   color: #2f80ed;
 }
 
-.header__subtitle-link_opacity:hover {
+.header__subtitle-link:hover {
   opacity: .5;
   transition: .2s, ease-in-out, linear;
 }
